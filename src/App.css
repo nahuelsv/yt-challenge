@@ -1,0 +1,9 @@
+.container {
+    height: 100vh;
+    display: flex;
+}
+/*
+.MuiPaper-root {
+    margin: auto;
+    padding: 25px 0 50px 0;
+} */
