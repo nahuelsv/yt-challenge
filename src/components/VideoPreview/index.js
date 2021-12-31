@@ -12,13 +12,12 @@ const VideoPreview = (
         <Card className={styles.card}>
             <CardActionArea onClick={() => clicked(videoId)}>
                 <CardMedia
-                    component="img"
-                    height="140"
+                    component="img"                    
                     image={url}
                     alt={title}
                 />
                 <CardContent sx={{padding:0}}>                    
-                    <Typography variant="body2" color="text.secondary" component="div">
+                    <Typography variant="body2" color="text.secondary" component="div" sx={{textAlign:"center"}}>
                         {title}
                     </Typography>
                 </CardContent>

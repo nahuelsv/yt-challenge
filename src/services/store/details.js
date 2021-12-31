@@ -42,7 +42,8 @@ export default slice.reducer;
 
 const { detailsRequested, detailsReceived, detailsRequestFailed } = slice.actions;
 
-export const fetchDetails = (videoId) => (dispatch) => {
+export const fetchDetails = (videos) => (dispatch) => {
+    const {videoId} = videos.list[0].id;
     const data = {
         id: videoId,
         part: 'snippet'

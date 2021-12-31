@@ -29,21 +29,21 @@ const store = configureStore();
 function App() {
   return (
     <Provider store={store}>  
-    <ThemeProvider theme={darkTheme}>
-      <Container maxWidth="lg" sx={styles.container}>
-          <Paper elevation={1} sx={styles.paper}>
-            <Routes>
-                <Route path="/" element={<Home/>} />
-                <Route path="/details" element={<Details/>} />
-                <Route 
-                  path="*" 
-                  element={
-                      <p style={{ padding: "1rem" }}>There's nothing here!</p>
-                  }
-                />
-            </Routes> 
-          </Paper>
-      </Container>
+      <ThemeProvider theme={darkTheme}>
+        <Container maxWidth="lg" sx={styles.container}>
+            <Paper elevation={1} sx={styles.paper}>
+              <Routes>
+                  <Route path="/" element={<Home/>} />
+                  <Route path="/details" element={<Details/>} />
+                  <Route 
+                    path="*" 
+                    element={
+                        <p style={{ padding: "1rem" }}>There's nothing here!</p>
+                    }
+                  />
+              </Routes> 
+            </Paper>
+        </Container>
       </ThemeProvider>
     </Provider>
   );

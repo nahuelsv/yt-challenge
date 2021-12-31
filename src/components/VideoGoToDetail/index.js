@@ -1,16 +1,16 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import styles from "../../assets/css/videoGoToDetail.module.css";
 
-const baseStyle = {    
-    display:"flex", 
-    alignItems:"start", 
-    h2: {
-        margin:0,
-    },
+const baseStyle = {   
     Button: { 
         marginLeft:50,
-        minWidth: 'fit-content'
+        minWidth: 'fit-content',
+        '@media (max-width: 900px)': {
+            marginLeft:0,
+        },
+
     }
 }
 
@@ -20,9 +20,9 @@ const VideoGoToDetail = ({navigateTo, btnText, marginTop, marginBottom}) => {
     const { snippet } = videos.list[0];
 
     const style = {
-        ...baseStyle,
+        ...baseStyle,        
         marginTop, 
-        marginBottom,
+        marginBottom,       
     }
     
     const handleNavigation = (path) => {
@@ -30,12 +30,11 @@ const VideoGoToDetail = ({navigateTo, btnText, marginTop, marginBottom}) => {
     }
 
     return (
-        <div style={style}>
-            <h2 style={style.h2}>
+        <div className={styles.box} style={style}>
+            <h2 className={styles.h2}>
                 {snippet.title}
             </h2>
             <Button 
-                style={style.Button} 
                 variant="contained"
                 disabled={videos.loading || videos.error}                
                 onClick={()=> handleNavigation(navigateTo)}
