@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Paper } from "@mui/material";
-import styles from "../../assets/css/watchCounter.module.css";
+import styles from "../assets/css/watchCounter.module.css";
 
 const WatchedCounter = () => {
     const watchedCounter = useSelector(state => state.watched);

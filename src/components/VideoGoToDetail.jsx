@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
-import styles from "../../assets/css/videoGoToDetail.module.css";
+import styles from "../assets/css/videoGoToDetail.module.css";
 
 const baseStyle = {   
     Button: { 

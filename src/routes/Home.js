@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchVideos } from "../../services/store/videos";
-import SearchBar from "../../components/SearchBar";
-import VideoBox from "../../components/VideoBox";
+import { fetchVideos } from "../services/store/videos";
+import SearchBar from "../components/SearchBar";
+import VideoBox from "../components/VideoBox";
 import { Grid, Container } from "@mui/material";
 
 const Home = () => {

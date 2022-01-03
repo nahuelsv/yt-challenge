@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Grid, Container } from "@mui/material";
-import VideoGoToDetail from "../../components/VideoGoToDetail";
-import VideoDetail from "../../components/VideoDetail";
-import { fetchDetails } from "../../services/store/details";
+import VideoGoToDetail from "../components/VideoGoToDetail";
+import VideoDetail from "../components/VideoDetail";
+import { fetchDetails } from "../services/store/details";
 
 const Details = () => {
     const dispatch = useDispatch();

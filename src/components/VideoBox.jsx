@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import VideoFrame from "../VideoFrame";
-import VideoRecommendations from "../VideoRecommendation";
-import WatchedCounter from "../WatchedCounter";
-import VideoGoToDetail from "../VideoGoToDetail";
+import VideoFrame from "./VideoFrame";
+import VideoRecommendations from "./VideoRecommendation";
+import WatchedCounter from "./WatchedCounter";
+import VideoGoToDetail from "./VideoGoToDetail";
 
 const VideoBox = () => {
     return (

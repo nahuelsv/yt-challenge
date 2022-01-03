@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
-import { playVideo } from "../../services/store/watchedCounter";
+import { playVideo } from "../services/store/watchedCounter";
 import { CircularProgress, Box } from "@mui/material";
 import ReactPlayer from "react-player";
-import { playerConfig } from "./playerConfig";
+import { playerConfig } from "../enums/playerConfig";
 
 const embedURL = "https://www.youtube.com/embed/";
 

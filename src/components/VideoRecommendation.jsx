@@ -1,10 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
-import { fetchVideos } from "../../services/store/videos";
-import { addToWatched } from "../../services/store/watchedCounter";
+import { fetchVideos } from "../services/store/videos";
+import { addToWatched } from "../services/store/watchedCounter";
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import VideoPreview from "../VideoPreview";
-import VideoLoader from "../VideoLoader";
+import VideoPreview from "./VideoPreview";
+import VideoLoader from "./VideoLoader";
 
 const useStyles = makeStyles(theme => ({
     video: {

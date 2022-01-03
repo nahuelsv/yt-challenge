@@ -1,4 +1,4 @@
-import styles from "../../assets/css/videoPreview.module.css";
+import styles from "../assets/css/videoPreview.module.css";
 import { Card, CardContent, CardMedia, CardActionArea, Typography } from "@mui/material";
 
 const VideoPreview = (

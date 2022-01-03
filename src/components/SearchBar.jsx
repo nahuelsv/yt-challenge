@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { fetchVideos } from "../../services/store/videos";
-import { addToWatched } from "../../services/store/watchedCounter";
+import { fetchVideos } from "../services/store/videos";
+import { addToWatched } from "../services/store/watchedCounter";
 import { Paper, InputBase, IconButton  } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search'
 
