@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 import styles from "../assets/css/videoGoToDetail.module.css";
+import { decodeEntities } from "../services/helpers/decodeEntities";
 
 const baseStyle = {   
     Button: { 
@@ -32,7 +33,7 @@ const VideoGoToDetail = ({navigateTo, btnText, marginTop, marginBottom}) => {
     return (
         <div className={styles.box} style={style}>
             <h2 className={styles.h2}>
-                {snippet.title}
+                {decodeEntities(snippet.title)}
             </h2>
             <Button 
                 variant="contained"

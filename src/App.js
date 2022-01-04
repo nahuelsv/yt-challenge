@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import  configureStore from "./services/store/configStore";
 import { Routes, Route } from 'react-router-dom';
 import { Paper, Container, ThemeProvider } from "@mui/material";
-import { AppStyles } from './assets/js/app';
+import { AppStyles } from './assets/js/App';
 import Home from './routes/Home';
 import Details from './routes/Details';
 import NotFound from './routes/NotFound';

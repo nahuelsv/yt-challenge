@@ -2,19 +2,10 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchVideos } from "../services/store/videos";
 import { addToWatched } from "../services/store/watchedCounter";
 import { Grid } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import VideoPreview from "./VideoPreview";
 import VideoLoader from "./VideoLoader";
-
-const useStyles = makeStyles(theme => ({
-    video: {
-        maxWidth:250,
-        cursor: "pointer",
-        img: {
-            width: 250
-        }
-    }
-}))
+import { VideoRecommendationStyles } from "../assets/js/VideoRecommendation";
+import { decodeEntities } from "../services/helpers/decodeEntities";
 
 const VideoRecommendations = () => {
     const dispatch = useDispatch();
@@ -35,11 +26,11 @@ const VideoRecommendations = () => {
                         : videos.map(
                         ({snippet}, index) => (     
                             (index > 0) && 
-                            <Grid item key={index} style={useStyles.video}>
+                            <Grid item key={index} style={VideoRecommendationStyles.video}>
                                 <VideoPreview                                     
                                     url={snippet.thumbnails.high.url} 
-                                    title={snippet.title} 
-                                    videoId={snippet.title} 
+                                    title={decodeEntities(snippet.title)} 
+                                    videoId={decodeEntities(snippet.title)} 
                                     clicked={clicked}
                                     style={{width:"auto"}}
                                 />  

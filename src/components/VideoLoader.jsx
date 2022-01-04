@@ -1,4 +1,5 @@
 import { Grid, CircularProgress, Box } from "@mui/material";
+import { VideoLoaderStyles } from "../assets/js/VideoLoader";
 
 const VideoLoader = () => {
     const placeholder = [
@@ -10,7 +11,7 @@ const VideoLoader = () => {
         <>
             {placeholder.map(value => ( 
                 <Grid item key={value.id}>
-                    <Box style={{width:"200px",height:"150px",display:"flex",justifyContent:"center",alignItems:"center", background: "black"}}> 
+                    <Box style={VideoLoaderStyles}> 
                         <CircularProgress/> 
                     </Box>
                 </Grid>

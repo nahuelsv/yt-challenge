@@ -11,10 +11,6 @@ const Details = () => {
     const navigate = useNavigate();
     const videos = useSelector(state => state.videos);
 
-    console.log(videos.list.length)
-
-    
-
     useEffect(() => {
         if (videos.list.length === 1 || videos.firstSearch) 
             navigate("/")
