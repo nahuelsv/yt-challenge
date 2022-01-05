@@ -10,6 +10,7 @@
 .box button {
     margin-left: 50px;
     min-width: fit-content;
+    height: fit-content;
 }
 
 @media (max-width: 900px) {
